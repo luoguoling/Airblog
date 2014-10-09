@@ -18,8 +18,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'Airblog',                      # Or path to database file if using sqlite3.
-        'USER': 'airblog',                      # Not used with sqlite3.
-        'PASSWORD': '10191028',                  # Not used with sqlite3.
+        'USER': 'xxxxx',                      # Not used with sqlite3.
+        'PASSWORD': 'xxxxx',                  # Not used with sqlite3.
         'HOST': 'localhost',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '3306',                      # Set to empty string for default. Not used with sqlite3.
     }
@@ -93,7 +93,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = 'oj=!mes67v55k^#uj1!-g2z-r*)xi9b!miuf1ov3tm0&amp;(9i$os'
+SECRET_KEY = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
