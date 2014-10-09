@@ -1,7 +1,7 @@
 Airblog+
 ========
 博客地址: [http://airblog.net](http://airblog.net)
-
+*注意：github源码为开发版下载源码后根据实际情况更改`setting.py`即可在`python manage.py runserver`开发服务器器下运行*
 #概述
 - **Airblog+**是一个给予**Django**开发的博客系统，项目初衷是希望构建一套由最基本功能组建而成的博客系统，做到“**极简**”为目标，让使用者尽情书写回归博客本质，重拾文字的力量。
 
