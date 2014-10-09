@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}{{ article.title }}{% endblock %}
+
+{# 引入 markdown 解析模版标签 #}
+{% load markup %}
+{# 引入多说评论系统模版标签 #}
+{% load duoshuo_tags %}
+
+{% block content %}
+<!-- 右侧主内容区域 -->
+<div class="col-md-8">
+  <div class="panel panel-default">
+    <div class="panel-body">
+        <h6>{{ article.title }}</h6>
+        <p>
+          {{ article.update_time|date:"Y年m月d日 H时i" }}
+          | <img src="/static/images/Glyphs/category.png"> : <a href="{% url blog:categoryFilter article.category.id %}"><strong>{{ article.category.name}}</strong></a>
+          | <img src="/static/images/Glyphs/tag.png" /> :
+          {% for tag in article.tags.all %}
+          <a href="{% url blog:tagFilter tag.id %}"><span class="label label-default">{{ tag.tag_name }}</span></a>
+          {% endfor %}
+        </p>
+        <hr />
+        <div class="markdown">
+          {{ article.content|markdown:'codehilite' }}
+        </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      {% duoshuo_comments %}
+    </div>
+  </div>
+</div>
+{% endblock %}

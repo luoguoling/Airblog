@@ -1,0 +1,28 @@
+<!-- 左侧边栏 -->
+<div class="col-md-3 ">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <p>最近文章</p>
+      <hr />
+      {% for article in RECENTLY %}
+      <p>
+      <a href="{% url blog:articleDetails article.id %}">{{ article.title }}</a>
+      <br />
+      {{ article.update_time|date:"Y年m月d日 H时i分" }}
+      </p>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <p>文章分类</p>
+      <hr />
+      <ul>
+        {% for category in CATEGORIES %}
+        <li><a href="{% url blog:categoryFilter category.id %}">{{ category.name }} ({{ category.article_set.all.count }})</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- 结束左侧边栏 -->

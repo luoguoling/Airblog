@@ -1,0 +1,33 @@
+body {
+    background-color: #eaedee;
+    margin-bottom: 20px;
+}
+
+.container { min-height: 100%; }
+/************************
+* Markdown 内容居中样式 *
+************************/
+div.markdown img {
+    display: block;
+    clear: both;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/*******************
+* Airblog 页脚样式 *
+*******************/
+footer {
+    position: fixed;
+    bottom: 0px;
+    height: 30px;
+    width: 100%;
+    background-color: #eaedee;
+}
+
+footer p {
+    padding-top: 5px;
+}
