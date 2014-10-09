@@ -34,8 +34,8 @@ Airblog+
 
 文章列表页
 
-![airblog_demo_screenshot1](https://github.com/chenxc86/Airblog/blob/master/Airblog%2B/Airblog/media/demo_screenshot/airblog_demo_screenshot1.jpg)
+![airblog_demo_screenshot1](https://github.com/chenxc86/Airblog/blob/master/Airblog/media/demo_screenshot/airblog_demo_screenshot1.jpg)
 
 文章详细页
 
-![airblog_demo_screenshot2](https://github.com/chenxc86/Airblog/blob/master/Airblog%2B/Airblog/media/demo_screenshot/airblog_demo_screenshot2.jpg)
+![airblog_demo_screenshot2](https://github.com/chenxc86/Airblog/blob/master/Airblog/media/demo_screenshot/airblog_demo_screenshot2.jpg)
